@@ -87,27 +87,28 @@ export default function Novelselect() {
               selectedNovelIds.includes(novel.id) ? 'ring-2 ring-blue-500' : ''
             }`}
           >
-            <Image
-              src={header3}
-              alt="Vercel Logo"
-              className="px-1 xl:pr-5 h-full"
-              priority
-            />
-            <div>
-              <p className="text-base self-center text-center font-normal mt-2">{novel.text}</p>
-              <p className="text-xs  self-left font-normal">{novel.Author}</p>
-              <p className="flex text-xs text-[#878787] self-bottom font-normal mb-2 mt-3">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-4 h-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                 ตอนที่ 18 อยากเข้าป่า</p>
-              <p className="flex text-xs text-[#878787] self-bottom font-normal">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-4 h-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
-                </svg>
-                 คั่นล่าสุดวันที่ 21 มีนาคม 2560</p>
-            </div>
-            
+              <div>
+              <Image
+                src={header3}
+                alt="Vercel Logo"
+                className="px-1 xl:pr-5 h-fit"
+                priority
+              />
+              </div>
+              <div>
+                <p className="text-base self-center text-center font-normal mt-2">{novel.text}</p>
+                <p className="text-xs  self-left font-normal">{novel.Author}</p>
+                <p className="flex text-xs text-[#878787] self-bottom font-normal mb-2 mt-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  ตอนที่ 18 อยากเข้าป่า</p>
+                <p className="flex text-xs text-[#878787] self-bottom font-normal">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                  </svg>
+                  คั่นล่าสุดวันที่ 21 มีนาคม 2560</p>
+              </div>
           </div>
         ))}
       </div>
